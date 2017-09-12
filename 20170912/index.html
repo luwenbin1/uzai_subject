@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html style='font-size: 50px' ng-app="myApp">
+
+<head lang="zh-cn">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC默认竖屏 ，UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <!-- QQ强制竖屏 QQ强制全屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <meta name="keywords" content="澳大利亚 新西兰 早订优惠">
+    <meta name="description" content="来澳大利亚新西兰玩耍，澳大利亚一地畅游悉尼、墨尔本、珀斯、大堡礁，新西兰体验100%纯净自然风光，澳新连线升级海陆空全新体验。">
+    <script src="https://r03.uzaicdn.com/content/hybrid/scripts/common/font.js"></script>
+    <link href="https://r03.uzaicdn.com/content/hybrid/styles/common/base.css" rel="stylesheet">
+    <link href="https://mhd.uzai.com/common/swiper/swiper.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://mhd.uzai.com/common/template.min.css">
+    <link rel="stylesheet" href="index.min.css">
+    <title>新之纯净 澳式盛宴</title>
+</head>
+
+<body ng-controller="france" jsonpid='206'>
+    <img src="images/1.jpg" class="h69" />
+    <div class="fixed" id='fixed_nav'>
+        <li class="J_li active" attr-index='floor1' attr-added="fixed_nav"><span>人气推荐</span></li>
+        <li class="J_li" attr-index='floor2' attr-added="fixed_nav"><span>澳大利亚</span></li>
+        <li class="J_li" attr-index='floor3' attr-added="fixed_nav"><span>新西兰</span></li>
+        <li class="J_li" attr-index='floor4' attr-added="fixed_nav"><span>澳新全景</span></li>
+    </div>
+    <img src="images/2.jpg" width="100%" id="floor1"/>
+    <div class="main1">
+        <div class="main1_top uzai_nav">
+            <li class="active" attr-index="0">畅销爆款</li>
+            <li attr-index="1">早订优惠</li>
+            <li attr-index="2">南半球必游</li>
+        </div>
+        <div class="mart-2">
+            <div class="subject-swiper-container uzai_nav_main">
+                <list class="swiper-wrapper" datatype='1' getproduct="{{ productdatas[0]}} " productname="第二人半价"></list>
+                <div class="swiper-pagination1"></div>
+            </div>
+            <div class="subject-swiper-container uzai_nav_main" hidden>
+                <list class="swiper-wrapper" datatype='1' getproduct="{{ productdatas[1]}} " productname="第二人半价"></list>
+                <div class="swiper-pagination1"></div>
+            </div>
+            <div class="subject-swiper-container uzai_nav_main" hidden>
+                <list class="swiper-wrapper" datatype='1' getproduct="{{ productdatas[2]}} " productname="第二人半价"></list>
+                <div class="swiper-pagination1"></div>
+            </div>
+        </div>
+    </div>
+    <img src="images/3.jpg" width="100%" id="floor2"/>
+    <div class="main2">
+        <list datatype='2' getproduct="{{ productdatas[3]}} "></list>
+        <list datatype='2' getproduct="{{ productdatas[4]}} "></list>
+        <div class="subject-swiper-container main2_swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide he47"><img attr-src="images/101.jpg" /></div>
+                <div class="swiper-slide he47"><img attr-src="images/102.jpg" /></div>
+                <div class="swiper-slide he47"><img attr-src="images/103.jpg" /></div>
+                <div class="swiper-slide he47"><img attr-src="images/104.jpg" /></div>
+            </div>
+            <div class="swiper-pagination1"></div>
+        </div>
+        <list datatype='2' getproduct="{{ productdatas[5]}} "></list>
+    </div>
+    <img src="images/4.jpg" width="100%"  id="floor3"/>
+    <div class="main3">
+        <list datatype='2' getproduct="{{ productdatas[6]}} "></list>
+        <list datatype='2' getproduct="{{ productdatas[7]}} "></list>
+        <div class="subject-swiper-container main2_swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide he47"><img attr-src="images/105.jpg" /></div>
+                <div class="swiper-slide he47"><img attr-src="images/106.jpg" /></div>
+                <div class="swiper-slide he47"><img attr-src="images/107.jpg" /></div>
+                <div class="swiper-slide he47"><img attr-src="images/108.jpg" /></div>
+                <div class="swiper-slide he47"><img attr-src="images/109.jpg" /></div>
+            </div>
+            <div class="swiper-pagination1"></div>
+        </div>
+    </div>
+    <img src="images/5.jpg" width="100%" id="floor4"/>
+    <div class="main4">
+        <list datatype='2' getproduct="{{ productdatas[8]}} "></list>
+        <list datatype='2' getproduct="{{ productdatas[9]}} "></list>
+    </div>
+    <img src="images/6.jpg" width="100%" />
+    <div class="main5">
+        <a href="https://m.uzai.com/search/list?city=1&keyword=美洲"><img attr-src="images/10.jpg"/></a>
+        <a href="https://m.uzai.com/search/list?city=1&keyword=东南亚"><img attr-src="images/11.jpg"/></a>
+        <a href="https://m.uzai.com/search/list?city=1&keyword=欧洲"><img attr-src="images/12.jpg"/></a>
+        <a href="https://m.uzai.com/search/list?city=1&keyword=日本"><img attr-src="images/13.jpg"/></a>
+        <a href="https://m.uzai.com/search/list?city=1&keyword=海岛"><img attr-src="images/14.jpg"/></a>
+        <a href="https://m.uzai.com/search/list?city=1&keyword=澳洲"><img attr-src="images/15.jpg"/></a>
+        <a href="https://m.uzai.com/search/list?city=1&keyword=中东非"><img attr-src="images/16.jpg"/></a>
+        <a href="https://m.uzai.com/search/list?city=1&keyword=台湾"><img attr-src="images/17.jpg"/></a>
+    </div>
+</body>
+<script src="https://r03.uzaicdn.com/content/libs/frame/angular/angular.min.js"></script>
+<script src="https://mhd.uzai.com/common/swiper/swiper.min.js"></script>
+<script src="https://r03.uzaicdn.com/content/hybrid/scripts/common/api.js"></script>
+<script src="https://r03.uzaicdn.com/content/hybrid/scripts/common/app-bridge.js"></script>
+<script src="https://mhd.uzai.com/common/template.js?v=c7394714f1?v=20161222"></script>
+<script src="index.js?v=c7394714f1?v=20161222"></script>
+</html>
