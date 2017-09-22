@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html style='font-size: 50px' ng-app='myApp'>
+
+<head lang="zh-cn">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC默认竖屏 ，UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <!-- QQ强制竖屏 QQ强制全屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <meta name="keywords" content="当季旅行 热门目的地 出境游">
+    <meta name="description" content="为满足您的不同出行需求，众信旅游精心您挑选了当季热门目的地，热销线路，特价产品为您的出游提供指导意见">
+    <script src="https://r03.uzaicdn.com/content/hybrid/scripts/common/font.js"></script>
+    <link href="https://mhd.uzai.com/common/swiper/swiper.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://mhd.uzai.com/common/template.min.css">
+    <link rel="stylesheet" href="index.min.css?v=555555">
+    <title>旅游风向标 看看别人都去哪儿 为您的出游提供指导意见 众信旅游悠哉网</title>
+</head>
+
+<body jsonpid='210' ng-controller="france">
+
+    <div class="uzai-net-products">
+        <div class="uzai-net-fixed">
+            <!--banner图-->
+            <div class="net-banner">
+                <img src="images/1-1.jpg" alt="">
+            </div>
+
+            <!--导航-->
+            <div class="bar-height">
+                <div class="uzai-netsix-bar">
+                    <ul>
+                        <li class="j_nav selected"><em>畅销爆款</em><i class=""></i></li>
+                        <li class="j_nav"><em>早订优惠</em><i class="zHide"></i></li>
+                        <li class="j_nav"><em>特价抢购</em><i class="zHide"></i></li>
+                        <li class="j_nav"><em>热门目的地</em><i class="zHide"></i></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 畅销爆款 -->
+            <div class="uzai-product-six conts-scroll">
+                <img src="images/1-2.jpg" alt="">
+                <list datatype='2' getproduct="{{ productdatas[0]}} "></list>
+            </div>
+
+            <!-- 早订优惠 -->
+            <div class="uzai-product-six conts-scroll">
+                <img src="images/1-3.jpg" alt="">
+                <list datatype='3' getproduct="{{ productdatas[1]}} " label="早订优惠"></list>
+            </div>
+
+            <!-- 特价抢购 -->
+            <div class="uzai-product-six conts-scroll">
+                <img src="images/1-4.jpg" alt="">
+                <list datatype='3' getproduct="{{ productdatas[2]}} " label="特价抢购"></list>
+            </div>
+
+            <!-- 热门目的地 -->
+            <div class="uzai-product-six conts-scroll subject-swiper">
+                <img src="images/1-5.jpg" alt="">
+                <div class="bar-height">
+                    <div class="uzai-netsix-bar">
+                        <ul>
+                            <li class="j_nav selected">NO.1欧洲</li>
+                            <li class="j_nav">NO.2日本</li>
+                            <li class="j_nav">NO.3东南亚</li>
+                            <li class="j_nav">NO.4美洲</li>
+                            <li class="j_nav">NO.5中东非</li>
+                            <li class="j_nav">NO.6澳洲</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pad-top">
+                    <!-- 欧洲 -->
+                    <div class="uzai_nav_main conts-scroll">
+                        <div class="subject-swiper-container">
+                            <img src="images/1-6.jpg" />
+                            <list class="swiper-wrapper" datatype='2' getproduct="{{ productdatas[6]}} "></list>
+                            <div class="swiper-pagination1"></div>
+                        </div>
+                    </div>
+                    <!-- 日本 -->
+                    <div class="uzai_nav_main conts-scroll">
+                        <div class="subject-swiper-container">
+                            <img src="images/1-7.jpg" />
+                            <list class="swiper-wrapper" datatype='2' getproduct="{{ productdatas[7]}} "></list>
+                            <div class="swiper-pagination1"></div>
+                        </div>
+                    </div>
+                    <!-- 东南亚 -->
+                    <div class="uzai_nav_main conts-scroll">
+                        <div class="subject-swiper-container">
+                            <img src="images/1-8.jpg" />
+                            <list class="swiper-wrapper" datatype='2' getproduct="{{ productdatas[8]}} "></list>
+                            <div class="swiper-pagination1"></div>
+                        </div>
+                    </div>
+                    <!-- 美洲 -->
+                    <div class="uzai_nav_main conts-scroll">
+                        <div class="subject-swiper-container">
+                            <img src="images/1-9.jpg" />
+                            <list class="swiper-wrapper" datatype='2' getproduct="{{ productdatas[9]}} "></list>
+                            <div class="swiper-pagination1"></div>
+                        </div>
+                    </div>
+                    <!-- 中东非 -->
+                    <div class="uzai_nav_main conts-scroll">
+                        <div class="subject-swiper-container">
+                            <img src="images/1-10.jpg" />
+                            <list class="swiper-wrapper" datatype='2' getproduct="{{ productdatas[10]}} "></list>
+                            <div class="swiper-pagination1"></div>
+                        </div>
+                    </div>
+                    <!-- 中东非 -->
+                    <div class="uzai_nav_main conts-scroll">
+                        <div class="subject-swiper-container">
+                            <img src="images/1-11.jpg" />
+                            <list class="swiper-wrapper" datatype='2' getproduct="{{ productdatas[11]}} "></list>
+                            <div class="swiper-pagination1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uzai-product-six blue-bg">
+                <div class="bar-height">
+                    <div class="uzai-netsix-bar">
+                        <ul>
+                            <li class="j_nav selected">出境半自助</li>
+                            <li class="j_nav">出境自由行</li>
+                            <li class="j_nav">邮轮/自驾/极地</li>
+                            <li class="j_nav">畅游国内</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="uzai_nav_main conts-scroll">
+                    <img src="images/1-12.jpg" />
+                    <div class="subject-swiper-container">
+                        <list class="swiper-wrapper" datatype='2' getproduct="{{ productdatas[12]}} " label="日本半自助"></list>
+                        <div class="swiper-pagination1"></div>
+                    </div>
+                    <div class="subject-swiper-container">
+                        <list class="swiper-wrapper" datatype='2' getproduct="{{ productdatas[13]}} " label="新加坡半自助"></list>
+                        <div class="swiper-pagination1"></div>
+                    </div>
+                    <div class="subject-swiper-container">
+                        <list class="swiper-wrapper" datatype='2' getproduct="{{ productdatas[14]}} " label="巴厘岛半自助"></list>
+                        <div class="swiper-pagination1"></div>
+                    </div>
+                    <div class="subject-swiper-container">
+                        <list class="swiper-wrapper" datatype='2' getproduct="{{ productdatas[15]}} " label="普吉岛半自助"></list>
+                        <div class="swiper-pagination1"></div>
+                    </div>
+                    <div class="subject-swiper-container">
+                        <list class="swiper-wrapper" datatype='2' getproduct="{{ productdatas[16]}} " label="欧洲半自助"></list>
+                        <div class="swiper-pagination1"></div>
+                    </div>
+                    <div class="subject-swiper-container">
+                        <list class="swiper-wrapper" datatype='2' getproduct="{{ productdatas[17]}} " label="澳美非半自助"></list>
+                        <div class="swiper-pagination1"></div>
+                    </div>
+                    <div class="subject-swiper-container">
+                        <list class="swiper-wrapper" datatype='2' getproduct="{{ productdatas[18]}} " label="更多半自助"></list>
+                        <div class="swiper-pagination1"></div>
+                    </div>
+                </div>
+                <div class="uzai_nav_main conts-scroll">
+                    <img src="images/1-13.jpg" />
+                    <div class="subject-swiper-container">
+                        <list class="swiper-wrapper" datatype='2' getproduct="{{ productdatas[19]}} " label="自由行短线"></list>
+                        <div class="swiper-pagination1"></div>
+                    </div>
+                    <div class="subject-swiper-container">
+                        <list class="swiper-wrapper" datatype='2' getproduct="{{ productdatas[20]}} " label="自由行长线"></list>
+                        <div class="swiper-pagination1"></div>
+                    </div>
+                    <div class="subject-swiper-container">
+                        <list class="swiper-wrapper" datatype='2' getproduct="{{ productdatas[21]}} " label="自由行clubmed"></list>
+                        <div class="swiper-pagination1"></div>
+                    </div>
+                </div>
+                <div class="uzai_nav_main conts-scroll">
+                    <img src="images/1-14.jpg" />
+                    <div class="subject-swiper-container">
+                        <list class="swiper-wrapper" datatype='2' getproduct="{{ productdatas[19]}} " label="短线邮轮"></list>
+                        <div class="swiper-pagination1"></div>
+                    </div>
+                    <div class="subject-swiper-container">
+                        <list class="swiper-wrapper" datatype='2' getproduct="{{ productdatas[20]}} " label="欧洲邮轮"></list>
+                        <div class="swiper-pagination1"></div>
+                    </div>
+                    <div class="subject-swiper-container">
+                        <list class="swiper-wrapper" datatype='2' getproduct="{{ productdatas[21]}} " label="美洲邮轮"></list>
+                        <div class="swiper-pagination1"></div>
+                    </div>
+                    <div class="subject-swiper-container">
+                        <list class="swiper-wrapper" datatype='2' getproduct="{{ productdatas[22]}} " label="精彩自驾"></list>
+                        <div class="swiper-pagination1"></div>
+                    </div>
+                    <div class="subject-swiper-container">
+                        <list class="swiper-wrapper" datatype='2' getproduct="{{ productdatas[23]}} " label="极地体验"></list>
+                        <div class="swiper-pagination1"></div>
+                    </div>
+                </div>
+                <div class="uzai_nav_main conts-scroll">
+                    <img src="images/1-15.jpg" />
+                    <div class="subject-swiper-container">
+                        <list class="swiper-wrapper" datatype='2' getproduct="{{ productdatas[14]}} " label="国内璀璨西部"></list>
+                        <div class="swiper-pagination1"></div>
+                    </div>
+                    <div class="subject-swiper-container">
+                        <list class="swiper-wrapper" datatype='2' getproduct="{{ productdatas[15]}} " label="国内华中华东"></list>
+                        <div class="swiper-pagination1"></div>
+                    </div>
+                    <div class="subject-swiper-container">
+                        <list class="swiper-wrapper" datatype='2' getproduct="{{ productdatas[16]}} " label="国内华北东北"></list>
+                        <div class="swiper-pagination1"></div>
+                    </div>
+                    <div class="subject-swiper-container">
+                        <list class="swiper-wrapper" datatype='2' getproduct="{{ productdatas[17]}} " label="国内海韵华南"></list>
+                        <div class="swiper-pagination1"></div>
+                    </div>
+                    <div class="subject-swiper-container">
+                        <list class="swiper-wrapper" datatype='2' getproduct="{{ productdatas[18]}} " label="港澳台"></list>
+                        <div class="swiper-pagination1"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uzai-mother-discount">
+                <img src="images/1-16.jpg" alt="">
+
+                <div class="cont">
+                    <a href="https://m.uzai.com/search/list?city=1&keyword=美洲">
+                        <img src="https://mhd.uzai.com/neteight/images/bot-01.jpg" alt="">
+                    </a>
+                    <a href="https://m.uzai.com/search/list?city=1&keyword=东南亚">
+                        <img src="https://mhd.uzai.com/neteight/images/bot-02.jpg" alt="">
+                    </a>
+                    <a href="https://m.uzai.com/search/list?city=1&keyword=欧洲">
+                        <img src="https://mhd.uzai.com/neteight/images/bot-03.jpg" alt="">
+                    </a>
+                    <a href="https://m.uzai.com/search/list?city=1&keyword=日本">
+                        <img src="https://mhd.uzai.com/neteight/images/bot-04.jpg" alt="">
+                    </a>
+                    <a href="https://m.uzai.com/search/list?city=1&keyword=海岛">
+                        <img src="https://mhd.uzai.com/neteight/images/bot-05.jpg" alt="">
+                    </a>
+                    <a href="https://m.uzai.com/search/list?city=1&keyword=澳洲">
+                        <img src="https://mhd.uzai.com/neteight/images/bot-06.jpg" alt="">
+                    </a>
+                    <a href="https://m.uzai.com/search/list?city=1&keyword=中东非">
+                        <img src="https://mhd.uzai.com/neteight/images/bot-07.jpg" alt="">
+                    </a>
+                    <a href="https://m.uzai.com/search/list?city=1&keyword=台湾">
+                        <img src="https://mhd.uzai.com/neteight/images/bot-08.jpg" alt="">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+<script src="https://mhd.uzai.com/common/swiper/swiper.min.js"></script>
+<script src="https://r03.uzaicdn.com/content/libs/frame/angular/angular.min.js"></script>
+<script src="https://r03.uzaicdn.com/content/hybrid/scripts/common/api.js "></script>
+<script src="https://r03.uzaicdn.com/content/hybrid/scripts/common/app-bridge.js "></script>
+<script src="https://mhd.uzai.com/common/template.js?v=577960f7cc"></script>
+<script src="https://mhd.uzai.com/fengxiangbiao/index.js"></script>
+
+</html>

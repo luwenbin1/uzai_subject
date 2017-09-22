@@ -1,0 +1,535 @@
+body {
+    -webkit-overflow-scrolling: touch;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+img {
+    width: 100%;
+    display: block;
+    border: none;
+}
+
+.zHide {
+    display: none;
+}
+
+.uzai-netsix-bar {
+    overflow: hidden;
+    background: #41240e;
+    height: 1rem;
+    width: 100%;
+    padding-left: 0.08rem;
+    box-sizing: border-box;
+    position: relative;
+    &.on {
+        position: fixed;
+        top: 0;
+        z-index: 100;
+    }
+    ul {
+        overflow-x: scroll;
+        width: 100%;
+        white-space: nowrap;
+    }
+    li {
+        font-size: .28rem;
+        color: #fff;
+        width: 1.78rem;
+        height: 1rem;
+        text-align: center;
+        line-height: 1rem;
+        display: inline-block;
+    }
+    &.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+}
+
+.bar-height {
+    height: 1rem;
+}
+
+.subject-swiper-container .swiper-slide-active {
+    width: calc(7.1rem + 1px)!important;
+}
+
+.productlist2 {
+    width: 7.1rem;
+    box-sizing: border-box;
+}
+
+.uzai-product-six {
+    background: #d97a30;
+    overflow: hidden;
+    .cont {
+        padding-bottom: .35rem;
+        overflow: hidden;
+    }
+    .productlist2 {
+        padding-left: .2rem;
+        .product-startadr {
+            left: .2rem;
+        }
+        .product-reduction {
+            left: .2rem;
+        }
+    }
+    &.active {
+        margin-top: 1rem;
+    }
+}
+
+.uzai-netsix-love {
+    position: relative;
+    .rule {
+        position: absolute;
+        top: 4.5rem;
+        right: .2rem;
+        width: 2rem;
+        height: .8rem;
+        display: block;
+    }
+    .lingqu {
+        position: absolute;
+        top: 4.4rem;
+        right: 2.2rem;
+        width: 3rem;
+        height: .9rem;
+        display: block;
+    }
+    .gift-text {
+        position: absolute;
+        top: 1.4rem;
+        right: 0.8rem;
+        height: .6rem;
+        line-height: 0.6rem;
+        display: block;
+        font-size: 0.2rem;
+    }
+    .gift-show {
+        color: #2e6dd1;
+        display: inline-block;
+        padding-left: 0.2rem;
+    }
+    .giftnum {
+        color: #d53327;
+    }
+}
+
+.product-btn {
+    background: #ff681a;
+}
+
+.uzai-netsix-sence {
+    overflow: hidden;
+    .cont {
+        overflow: hidden;
+        padding-bottom: 0.15rem;
+        .product-startadr {
+            display: none;
+        }
+    }
+}
+
+.uzai-mother-discount {
+    overflow: hidden;
+    padding: .28rem 0;
+    .cont {
+        padding: 0.4rem 0.15rem;
+        box-sizing: border-box;
+        a {
+            float: left;
+            margin-bottom: .1rem;
+            padding: 0 0.05rem;
+            box-sizing: border-box;
+            width: 50%;
+        }
+        img {
+            width: 100%;
+            height: 1.63rem;
+        }
+    }
+}
+
+.netsix-activity {
+    width: 6.6rem;
+    margin: 0 auto;
+    background: #dadada;
+    padding: .25rem 0;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 99;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    i.close {
+        position: absolute;
+        right: -.16rem;
+        top: -.16rem;
+        width: .52rem;
+        height: .54rem;
+        background-image: url("https://mhd.uzai.com/netseven/images/close.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-color: #fd722e;
+        color: #fff;
+        font-size: .4rem;
+        text-align: center;
+        line-height: .54rem;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+    }
+    .conts {
+        width: 5.7rem;
+        margin: 0 auto;
+        height: 7rem;
+        padding: .25rem .2rem;
+        overflow-y: scroll;
+        background: #fff;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        h2 {
+            font-size: .34rem;
+            color: #fd722e;
+            text-align: center;
+            margin-bottom: .2rem;
+        }
+        h3,
+        p {
+            font-size: .22rem;
+            color: #333;
+            line-height: .33rem;
+            b {
+                color: #e70909;
+            }
+        }
+        .c3 {
+            margin-top: .2rem;
+        }
+        img {
+            padding: 0.1rem 0;
+        }
+        span {
+            font-size: .18rem;
+            text-align: left;
+            display: block;
+            margin-top: .4rem;
+        }
+    }
+}
+
+.netsix-fixed {
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+}
+
+.net-choose,
+.net-end-connect {
+    background: #fff;
+    padding-bottom: 6rem;
+    padding-top: .8rem;
+    .header {
+        height: .8rem;
+        line-height: .8rem;
+        background: -webkit-gradient(linear, 100% 100%, 0 0, from(#ff8b00), to(#ff5000));
+        background: linear-gradient(to bottom, #ff8b00, #ff5000);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        h2 {
+            font-size: .34rem;
+            color: #fff;
+            text-align: center;
+        }
+        i.header-back {
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-image: url("images/back.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: .85rem;
+            height: .77rem;
+        }
+        &.active {
+            position: absolute;
+        }
+    }
+    .tips {
+        font-size: .22rem;
+        color: #f93b01;
+        margin-left: .3rem;
+        margin-top: .25rem;
+    }
+    .choose-cont {
+        h3 {
+            font-size: .28rem;
+            color: #333;
+            background: #e6e6e6;
+            text-align: center;
+            height: .6rem;
+            line-height: .6rem;
+            margin-top: .15rem;
+        }
+        ul {
+            li {
+                height: .9rem;
+                line-height: .9rem;
+                overflow: hidden;
+                background: #fafafa;
+                margin-bottom: .08rem;
+                span {
+                    color: #808080;
+                    font-size: .28rem;
+                    float: left;
+                }
+                .name {
+                    width: 3.78rem;
+                    padding-left: .3rem;
+                }
+            }
+            .sum {
+                margin-top: .2rem;
+                margin-right: .15rem;
+                i {
+                    float: left;
+                    width: .5rem;
+                    height: .5rem;
+                    text-align: center;
+                    line-height: .5rem;
+                    border: 1px solid #d5d7d4;
+                }
+                i.sub {
+                    border-top-left-radius: 3px;
+                    border-bottom-left-radius: 3px;
+                    font-size: .5rem;
+                }
+                i.add {
+                    border-top-right-radius: 3px;
+                    border-bottom-right-radius: 3px;
+                    color: #333;
+                    font-size: .5rem;
+                }
+                i.init-color {
+                    color: #808080!important;
+                }
+                i.val {
+                    width: .7rem;
+                    border-left: none;
+                    border-right: none;
+                }
+                i.forzen {
+                    color: #808080;
+                }
+                i.active {
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+.net-next {
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    .user {
+        font-size: .28rem;
+        color: #f93b01;
+        text-align: center;
+        background: #fff1cc;
+        height: .56rem;
+        line-height: .56rem;
+        border-bottom: 1px solid #d5d7d4;
+        b {
+            line-height: 100%;
+            .net-num {
+                display: inline-block;
+                border-bottom: 1px solid #f93b01;
+            }
+        }
+    }
+    .choose {
+        width: 6.9rem;
+        margin: .35rem auto;
+        overflow: hidden;
+        font-size: .28rem;
+        color: #333;
+        b:nth-of-type(1) {
+            width: 1.8rem;
+        }
+        b.ads {
+            width: 5.1rem;
+            font-weight: normal;
+            line-height: .42rem;
+        }
+        b {
+            float: left;
+        }
+    }
+    .next {
+        width: 6.9rem;
+        height: .95rem;
+        text-align: center;
+        line-height: .95rem;
+        background: -webkit-gradient(linear, 100% 100%, 0 0, from(#ff8b00), to(#ff5000));
+        background: linear-gradient(to bottom, #ff8b00, #ff5000);
+        font-size: .3rem;
+        color: #fff;
+        display: block;
+        margin: 0 auto .28rem;
+    }
+}
+
+.net-end-connect {
+    .end-choose {
+        font-size: .28rem;
+        color: #333;
+        background: #fffde5;
+        overflow: hidden;
+        padding: .3rem 0;
+        border-bottom: 1px solid #dcdcdc;
+        b:nth-of-type(1) {
+            font-weight: bold;
+            width: 1.68rem;
+            padding-left: .3rem;
+        }
+        .end-ads {
+            width: 5.22rem;
+            padding-right: .3rem;
+            line-height: .33rem;
+        }
+        b {
+            float: left;
+        }
+    }
+    .end-tips {
+        font-size: .24rem;
+        color: #333;
+        padding: .3rem;
+        border-bottom: 1px solid #e7e9ec;
+    }
+    .end-conts {
+        li {
+            border-bottom: 1px solid #e7e9ec;
+            overflow: hidden;
+            padding: .2rem 0;
+            b {
+                width: 1.23rem;
+                height: 0.7rem;
+                line-height: 0.7rem;
+                font-size: .28rem;
+                color: #333;
+                float: left;
+                padding-left: .3rem;
+            }
+            input {
+                float: left;
+                width: 5.68rem;
+                height: .3rem;
+                //line-height: .7rem;
+                outline: 0;
+                border: 0;
+                font-size: .3rem;
+                padding: .2rem 0;
+            }
+             ::-webkit-input-placeholder {
+                font-size: .28rem;
+                color: #aaaaaa;
+            }
+        }
+    }
+    p.remarks {
+        font-size: .24rem;
+        color: #aaaaaa;
+        line-height: .36rem;
+        padding: .35rem .3rem 0 .3rem;
+    }
+    .net-sumbit {
+        position: fixed;
+        background: #fff;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        a {
+            width: 6.9rem;
+            height: .95rem;
+            line-height: .95rem;
+            color: #fff;
+            font-size: .3rem;
+            text-align: center;
+            margin: 0 auto .45rem;
+            display: block;
+            background: -webkit-gradient(linear, 100% 100%, 0 0, from(#ff8b00), to(#ff5000));
+            background: linear-gradient(to bottom, #ff8b00, #ff5000);
+        }
+        &.active {
+            position: absolute;
+        }
+    }
+}
+
+.subject-swiper {
+    .subject-swiper-container {
+        background: #fff;
+        border-radius: 0.1rem;
+        overflow: hidden;
+        .productlist2 {
+            margin-top: 0;
+            padding-bottom: 0;
+        }
+        margin-bottom: 0.2rem;
+    }
+    .all-product-startadr {
+        display: none;
+    }
+    padding-bottom: 0.1rem;
+}
+
+.swiper-pagination1 {
+    margin: 0.2rem auto 0.25rem;
+    .swiper-pagination-bullet {
+        width: 0.16rem;
+        height: 0.16rem;
+        border-radius: 50%;
+        background: #dbdbdb;
+        opacity: 1;
+        &.swiper-pagination-bullet-active {
+            background: #000;
+        }
+    }
+}
+
+.blue-bg {
+    background: #8ba2d0;
+    .productlist2 {
+        margin-top: 0;
+    }
+}
+
+.pad-top {
+    padding-top: 0.3rem;
+}
+
+.uzai-mother-discount {
+    background: #fff6d2;
+}
+
+.padding-top {
+    padding-top: 1rem;
+}
