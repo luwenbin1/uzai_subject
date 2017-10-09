@@ -1,0 +1,161 @@
+body {
+    -webkit-overflow-scrolling: touch;
+}
+
+// h3 {
+//     font-weight: bold;
+// }
+img {
+    width: 100%;
+    display: block;
+    border: none;
+}
+
+.zHide {
+    display: none!important;
+}
+
+b {
+    font-weight: normal;
+}
+
+.all-product-startadr {
+    display: none;
+}
+
+.zx-japan-banner {
+    img.t {
+        height: 2.49rem;
+    }
+    img.t1 {
+        height: 1.69rem;
+    }
+    .bar {
+        position: relative;
+    }
+    .conts {
+        position: absolute;
+        width: 7.5rem;
+        overflow-y: scroll;
+        height: .8rem;
+        /* background: rgba(0,0,0,.6); */
+        top: 0;
+        left: 0;
+        z-index: 1;
+        ul {
+            background: rgba(0, 0, 0, .6);
+            color: #fff;
+            font-size: .3rem;
+            height: .8rem;
+            line-height: .8rem;
+            width: 14.4rem;
+            li {
+                float: left;
+                width: 1.9rem;
+                text-align: center;
+            }
+            li:last-child {
+                width: 3rem;
+            }
+        }
+        &.active {
+            position: fixed;
+        }
+    }
+}
+
+.zx-japan-t1 {
+    .zx-product {
+        background-image: url(https://mhd.uzai.com/japansix/images/bg1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        overflow: hidden;
+        padding-bottom: .55rem;
+    }
+    .t1 {
+        height: 1.23rem;
+    }
+}
+.zx-japan-t8{
+    overflow: hidden;
+    .zx-product{
+        overflow: hidden;
+        background: #fdeec7;
+        padding-bottom: .2rem;
+    }
+}
+.zx-japan-t2 {
+    background: #8ec4f8;
+    overflow: hidden;
+    padding-bottom: .55rem;
+    .la {
+        height: 2.57rem;
+    }
+}
+
+.zx-japan-t3 {
+    .t3 {
+        height: 1.55rem;
+    }
+    .zx-product {
+        background-image: url(https://mhd.uzai.com/japansix/images/bg3.jpg);
+        // background-repeat: repeat-y;
+        background-size: contain;
+        overflow: hidden;
+        padding-bottom: .55rem;
+    }
+}
+
+.zx-japan-t4 {
+    background-image: url(https://mhd.uzai.com/japansix/images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    padding-bottom: .55rem;
+    .t4 {
+        height: 1.36rem;
+    }
+}
+
+.zx-japan-t5 {
+    background-image: url(https://mhd.uzai.com/japansix/images/bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    padding-bottom: .55rem;
+    .t5 {
+        height: 1.44rem;
+    }
+}
+
+.zx-japan-t6 {
+    background-image: url(https://mhd.uzai.com/japansix/images/bg1.jpg);
+    // background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    padding-bottom: .55rem;
+}
+
+.zx-japan-t7 {
+    background-image: url(https://mhd.uzai.com/japansix/images/bg3.jpg);
+    // background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    padding-bottom: .55rem;
+}
+
+.zx-japan-footer {
+    overflow: hidden;
+    .product {
+        overflow: hidden;
+        padding-bottom: .3rem;
+        a {
+            width: 50%;
+            float: left;
+            margin-bottom: .2rem;
+        }
+    }
+    .ft1 {
+        height: 1.3rem;
+    }
+}

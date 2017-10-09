@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html style='font-size: 50px' ng-app='myApp'>
+
+<head lang="zh-cn">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC默认竖屏 ，UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <!-- QQ强制竖屏 QQ强制全屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <meta name="keywords" content="日本旅游，日本自由行，众信旅游">
+    <meta name="description" content="恋恋岛国，与纯正和韵不期而遇，众信旅游，推出的都是好线路，感受日本，总有一款适合你……">
+    <script src="https://r03.uzaicdn.com/content/hybrid/scripts/common/font.js"></script>
+    <link rel="stylesheet" href="https://mhd.uzai.com/common/template.min.css">
+    <link rel="stylesheet" href="index.min.css?13">
+    <title>日本 恋恋岛国 众信旅游</title>
+</head>
+
+<body jsonpid='120' ng-controller="france">
+    <!--banner图-->
+    <div class="zx-japan-banner">
+        <img src="https://mhd.uzai.com/japansix/images/b1.jpg" alt="" class="t">
+        <img attr-src="https://mhd.uzai.com/japansix/images/b2.jpg" alt="" class="t">
+        <img attr-src="https://mhd.uzai.com/japansix/images/b31.jpg" alt="" class="t1">
+        <div class="bar">
+            <img attr-src="https://mhd.uzai.com/japansix/images/b32.jpg" alt="">
+            <div class="conts">
+                <ul>
+                    <li>特别推荐</li>
+                    <li>一家一团</li>
+                    <li>追枫之旅</li>
+                    <li>辣妈必选乐园 </li>
+                    <li>天生爱美食</li>
+                    <li>惬意泡温泉</li>
+                    <li>玩转日本</li>
+                    <li>半自由行/自由行/邮轮</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="zx-japan-t1 zx-japan-all">
+        <img attr-src="https://mhd.uzai.com/japansix/images/t1.jpg" alt="" class="t1">
+        <div class="zx-product">
+            <div class="cont1 cont">
+                <list datatype='3' getproduct="{{ productdatas[0]}} "></list>
+            </div>
+        </div>
+    </div>
+    <div class="zx-japan-t8 zx-japan-all">
+        <img attr-src="https://mhd.uzai.com/japansix/images/t7.jpg" alt="" class="t1">
+        <div class="zx-product">
+            <div class="cont1 cont">
+                <list datatype='3' getproduct="{{ productdatas[1]}} "></list>
+                <list datatype='3' getproduct="{{ productdatas[2]}} "></list>
+            </div>
+        </div>
+    </div>
+    <div class="zx-japan-t2 zx-japan-all">
+        <img attr-src="https://mhd.uzai.com/japansix/images/l1.jpg" alt="" class="la">
+        <img attr-src="https://mhd.uzai.com/japansix/images/l2.jpg" alt="" class="la">
+        <img attr-src="https://mhd.uzai.com/japansix/images/l3.jpg" alt="" class="la">
+        <img attr-src="https://mhd.uzai.com/japansix/images/l4.jpg" alt="" class="la">
+        <div class="cont1 cont">
+            <list datatype='3' getproduct="{{ productdatas[19]}} "></list>
+        </div>
+    </div>
+
+    <div class="zx-japan-t3 zx-japan-all">
+        <img attr-src="https://mhd.uzai.com/japansix/images/t3.jpg" alt="" class="t3">
+        <div class="zx-product">
+            <div class="cont1 cont">
+                <list datatype='3' getproduct="{{ productdatas[9]}} "></list>
+            </div>
+        </div>
+    </div>
+
+    <div class="zx-japan-t4 zx-japan-all">
+        <img attr-src="https://mhd.uzai.com/japansix/images/t4.png" alt="" class="t4">
+        <div class="zx-product">
+            <div class="cont1 cont">
+                <list datatype='3' getproduct="{{ productdatas[8]}} "></list>
+            </div>
+        </div>
+    </div>
+
+    <div class="zx-japan-t5 zx-japan-all">
+        <img attr-src="https://mhd.uzai.com/japansix/images/t5.png" alt="" class="t5">
+        <div class="zx-product">
+            <div class="cont1 cont">
+                <list datatype='3' getproduct="{{ productdatas[7]}} "></list>
+            </div>
+        </div>
+    </div>
+
+    <div class="zx-japan-t6 zx-japan-all">
+        <img attr-src="https://mhd.uzai.com/japansix/images/t61.png" alt="">
+        <div class="zx-product">
+            <div class="cont1 cont">
+                <list datatype='3' getproduct="{{ productdatas[11]}} "></list>
+            </div>
+        </div>
+        <img attr-src="https://mhd.uzai.com/japansix/images/t62.png" alt="">
+        <div class="zx-product">
+            <div class="cont1 cont">
+                <list datatype='3' getproduct="{{ productdatas[12]}} "></list>
+            </div>
+        </div>
+        <img attr-src="https://mhd.uzai.com/japansix/images/t63.png" alt="">
+        <div class="zx-product">
+            <div class="cont1 cont">
+                <list datatype='3' getproduct="{{ productdatas[13]}} "></list>
+            </div>
+        </div>
+        <img attr-src="https://mhd.uzai.com/japansix/images/t64.png" alt="">
+        <div class="zx-product">
+            <div class="cont1 cont">
+                <list datatype='3' getproduct="{{ productdatas[14]}} "></list>
+            </div>
+        </div>
+        <img attr-src="https://mhd.uzai.com/japansix/images/t65.png" alt="">
+        <div class="zx-product">
+            <div class="cont1 cont">
+                <list datatype='3' getproduct="{{ productdatas[15]}} "></list>
+            </div>
+        </div>
+    </div>
+
+    <div class="zx-japan-t7 zx-japan-all">
+        <img attr-src="https://mhd.uzai.com/japansix/images/t71.png" alt="">
+        <div class="zx-product">
+            <div class="cont1 cont">
+                <list datatype='3' getproduct="{{ productdatas[16]}} "></list>
+            </div>
+        </div>
+        <img attr-src="https://mhd.uzai.com/japansix/images/t72.png" alt="">
+        <div class="zx-product">
+            <div class="cont1 cont">
+                <list datatype='3' getproduct="{{ productdatas[17]}} "></list>
+            </div>
+        </div>
+        <!--<img attr-src="https://mhd.uzai.com/japansix/images/t73.png" alt="">
+        <div class="zx-product">
+            <div class="cont1 cont">
+                <list datatype='3' getproduct="{{ productdatas[12]}} "></list>
+            </div>
+        </div>-->
+    </div>
+
+    <div class="zx-japan-footer">
+        <img src="https://mhd.uzai.com/japansix/images/ft1.jpg" alt="" class="ft1">
+        <div class="product">
+            <a href="https://m.uzai.com/search/list?city=1&keyword=欧洲">
+                <img attr-src="https://mhd.uzai.com/japansix/images/f1.jpg" alt="">
+            </a>
+            <a href="https://m.uzai.com/search/list?city=1&keyword=日本">
+                <img attr-src="https://mhd.uzai.com/japansix/images/f2.jpg" alt="">
+            </a>
+            <a href="https://m.uzai.com/search/list?city=1&keyword=东南亚">
+                <img attr-src="https://mhd.uzai.com/japansix/images/f3.jpg" alt="">
+            </a>
+            <a href="https://m.uzai.com/search/list?city=1&keyword=澳洲">
+                <img attr-src="https://mhd.uzai.com/japansix/images/f4.jpg" alt="">
+            </a>
+            <a href="https://m.uzai.com/search/list?city=1&keyword=美洲">
+                <img attr-src="https://mhd.uzai.com/japansix/images/f5.jpg" alt="">
+            </a>
+            <a href="https://m.uzai.com/search/list?city=1&keyword=海岛">
+                <img attr-src="https://mhd.uzai.com/japansix/images/f6.jpg" alt="">
+            </a>
+            <a href="https://m.uzai.com/search/list?city=1&keyword=台湾">
+                <img attr-src="https://mhd.uzai.com/japansix/images/f7.jpg" alt="">
+            </a>
+            <a href="https://m.uzai.com/search/list?city=1&keyword=中东非">
+                <img attr-src="https://mhd.uzai.com/japansix/images/f8.jpg" alt="">
+            </a>
+        </div>
+    </div>
+
+
+</body>
+<script src="https://r03.uzaicdn.com/content/libs/frame/angular/angular.min.js"></script>
+<script src="https://r03.uzaicdn.com/content/hybrid/scripts/common/api.js "></script>
+<script src="https://r03.uzaicdn.com/content/hybrid/scripts/common/app-bridge.js "></script>
+<script src="https://mhd.uzai.com/common/template.js?v=b0ab0a6a0e"></script>
+<script src="index.js?v=87c8d6d8"></script>
+
+</html>
